@@ -1,404 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Jukka Pajarinen's personal portfolio.">
-    <meta name="keywords" content="Jukka Pajarinen Superpong FlagquizUSA FlagquizEU Flagquiz FloodIt Sudoku">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Jukka Pajarinen">
-    <title>Jukka Pajarinen</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/build.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Jukka Pajarinen | Ansioluettelo" />
+    <meta name="author" content="Jukka Pajarinen" />
+    <title>Jukka Pajarinen | Ansioluettelo</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/build.css" type="text/css" />
     <script defer src="/build.js" type="text/javascript"></script>
   </head>
   <body>
-    <nav class="navbar is-fixed-top has-background-white" role="navigation">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item back-to-top" href="#"><span class="firstname">Jukka</span>Pajarinen</a>
-          <a class="navbar-burger" role="button"><span></span><span></span><span></span></a>
+    <div class="container bg-info" id="paper">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <h1 class="navbar-brand fs-1">Jukka Pajarinen</h1>
+          <button class="btn btn-primary" id="theme-toggler">
+            <i class="fas fa-adjust"></i>
+          </button>
         </div>
-        <div id="main-navbar" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#superpong">Superpong</a>
-            <a class="navbar-item" href="#flagquizusa">Flag Quiz USA</a>
-            <a class="navbar-item" href="#flagquizeu">Flag Quiz EU</a>
-            <a class="navbar-item" href="#flagquiz">Flag Quiz</a>
-            <a class="navbar-item" href="#sudoku">Sudoku</a>
-            <a class="navbar-item" href="#floodit">Flood It</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-item is-hidden-touch" href="#extramenu"><i class="fas fa-ellipsis-v"></i></a>
-              <div class="navbar-dropdown is-right is-boxed">
-                <a class="navbar-item" href="#emojidoku">Emojidoku</a>
-                <a class="navbar-item" href="#tictactoe">Tic Tac Toe</a>
-                <a class="navbar-item" href="#flappyblock">Flappy Block</a>
-                <a class="navbar-item" href="#taptaptap">Tap Tap Tap</a>
+      </nav>
+      <div class="container-fluid mt-3">
+        <div class="row gx-5">
+          <aside class="col-md-3 d-none d-md-block">
+            <section class="mb-4 w-50">
+              <img
+                src="/images/jukkapajarinen.png"
+                alt="Photo"
+                class="img-fluid"
+              />
+            </section>
+            <section class="mb-4">
+              <h3>Yhteystiedot</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:jukka.pajarinen@lumitum.com"
+                    >jukka.pajarinen@lumitum.com</a
+                  >
+                </li>
+                <li>
+                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/jukkapajarinen" target="_blank">jukkapajarinen</a>
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                  <a href="https://fi.linkedin.com/in/jukkapajarinen" target="_blank"
+                    >jukkapajarinen</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="mb-4">
+              <h3>Tekniset taidot</h3>
+              <div class="mb-3">
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">React</span>
+                <span class="badge bg-secondary">Redux</span>
+                <span class="badge bg-secondary">jQuery</span>
+                <span class="badge bg-secondary">Handlebars</span>
+                <span class="badge bg-secondary">Dust</span>
+                <span class="badge bg-secondary">Next.js</span>
+                <span class="badge bg-secondary">HTML5</span>
+                <span class="badge bg-secondary">CSS3</span>
+                <span class="badge bg-secondary">Sass</span>
+                <span class="badge bg-secondary">PostCSS</span>
+                <span class="badge bg-secondary">Bootstrap</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section class="hero is-dark is-medium is-odd first-hero has-divider" id="superpong">
-      <canvas id="particlesjs-canvas" class="is-hidden-mobile"></canvas>
-      <div class="hero-body aniview" data-av-animation="slideInRight">
-        <div class="container">
-          <div class="columns is-vcentered is-reverse-order-touch">
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Superpong</h1>
-                <p class="subtitle">Classic Pong with a modern twist!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Try to reduce opponent's balls to zero while guarding your own.</li>
-                    <li>There are 9 different items to boost your game.</li>
-                    <li>Remember to try the tsunami item!</li>
-                  </ol>
+              <div class="mb-3">
+                <span class="badge bg-secondary">Node.js</span>
+                <span class="badge bg-secondary">Express</span>
+                <span class="badge bg-secondary">JWT</span>
+                <span class="badge bg-secondary">AJAX</span>
+                <span class="badge bg-secondary">REST</span>
+                <span class="badge bg-secondary">PHP</span>
+                <span class="badge bg-secondary">PDO</span>
+                <span class="badge bg-secondary">Twig</span>
+                <span class="badge bg-secondary">C#</span>
+                <span class="badge bg-secondary">.NET Core</span>
+                <span class="badge bg-secondary">Nancy</span>
+                <span class="badge bg-secondary">WordPress</span>
+                <span class="badge bg-secondary">Drupal</span>
+                <span class="badge bg-secondary">MariaDB</span>
+                <span class="badge bg-secondary">PostgreSQL</span>
+                <span class="badge bg-secondary">LAMP</span>
+                <span class="badge bg-secondary">JAMstack</span>
+                <span class="badge bg-secondary">Webpack</span>
+                <span class="badge bg-secondary">Gulp</span>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-secondary">Microsoft Azure</span>
+                <span class="badge bg-secondary">Google Cloud Platform</span>
+                <span class="badge bg-secondary">Docker</span>
+                <span class="badge bg-secondary">GNU/Linux</span>
+                <span class="badge bg-secondary">Bash</span>
+                <span class="badge bg-secondary">GitHub</span>
+                <span class="badge bg-secondary">GitLab</span>
+                <span class="badge bg-secondary">CI/CD</span>
+                <span class="badge bg-secondary">GoCD</span>
+                <span class="badge bg-secondary">Robot</span>
+                <span class="badge bg-secondary">Selenium</span>
+                <span class="badge bg-secondary">YAML</span>
+                <span class="badge bg-secondary">JSON</span>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-secondary">Java</span>
+                <span class="badge bg-secondary">Android SDK</span>
+                <span class="badge bg-secondary">Admob</span>
+                <span class="badge bg-secondary">Google Play</span>
+                <span class="badge bg-secondary">LibGDX</span>
+                <span class="badge bg-secondary">Unity2D</span>
+                <span class="badge bg-secondary">G Suite Admin</span>
+                <span class="badge bg-secondary">Adobe XD</span>
+                <span class="badge bg-secondary">Figma</span>
+                <span class="badge bg-secondary">UI/UX</span>
+                <span class="badge bg-secondary">Scrum</span>
+              </div>
+            </section>
+          </aside>
+          <main class="col-md-9">
+            <section class="mb-4">
+              <h2>Ohjelmistokonsultti</h2>
+              <p>
+                Ohjelmistokehittäjänä olen intohimoinen ja huolellinen tekijä.
+                Minulla on paljon kokemusta
+                <strong>full-stack</strong> web-kehityksestä,
+                frontend-painotuksella. Verkkosivustoja ja verkkokauppoja olen
+                tehnyt lähemmäs toistakymmentä. Mobiilikehityksen puolella olen
+                julkaissut 10 omaa sovellusta
+                <a
+                  href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen"
+                  target="_blank"
+                  >Google Play</a
+                >
+                -kauppaan ja kehittänyt satojen tuhansien käyttäjien
+                Unity-sovellusta. Olen myös saanut kehuja
+                UI/UX-suunnittelijoilta visuaalisesta silmästäni
+                käyttöliittymien ja käyttäjäkokemuksen suhteen.
+              </p>
+              <p>
+                Suunnittelen ja toteutan ohjelmistotuotteesi tai osallistun
+                konsultointiapuna projektiisi. Saat minulta laadukasta koodia ja
+                sujuvaa yhteistyötä! Olen
+                <strong>ohjelmistotuotannon</strong> Diplomi-Insinööri ja pystyn
+                toimimaan laajasti ohjelmistotuotannon eri osa-alueilla.
+                Suunnittelen myös jouhevasti näyttävät verkkosivustot ja
+                toteutan niiden ohjelmoinnin staattisena tai WordPress ja Drupal
+                -alustoilla.
+              </p>
+            </section>
+            <section class="mb-4">
+              <h2>Työkokemus</h2>
+              <div class="mb-4">
+                <h3 class="row align-items-center">
+                  <span class="col-8 fs-5">Ohjelmistokonsultti, CTO, Lumitum Oy</span>
+                  <span class="col-4 fs-6 text-end">2020 - nyk.</span>
+                </h5>
+                <ul>
+                  <li>
+                    Hallituksen puheenjohtaja, perustajajäsen, CTO ja
+                    ohjelmistokonsultti.
+                  </li>
+                  <li>
+                    Päävastuuni yrityksessä on verkko- ja
+                    mobiilisovelluskehityksen konsultointipalveluiden
+                    tarjoaminen ohjelmistokonsulttina.
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Full-stack Developer, WordDive Oy</h5>
+                  <strong class="col-4 fs-6 text-end">2018 - 2020</strong>
                 </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkaboyar.colorpong" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
+                <ul>
+                  <li>
+                    Verkkoselainpohjaisen asiakasohjelman kehitys ja ylläpito.
+                    Web frontend: Webpack, jQuery, Dust.js, RxJS, ES6, REST.
+                  </li>
+                  <li>
+                    G Suite Super Admin luottamustehtävä. G Suiten käyttöönotto
+                    yrityksessä sekä järjestelmän ylläpito.
+                  </li>
+                  <li>
+                    Yrityksen verkkosivustojen kehitys, päivittäminen ja
+                    ylläpito.
+                  </li>
+                  <li>
+                    Ohjelmistokehitys osana yrityksen Unity-pohjaisen
+                    mobiilisovelluksen kehittämistiimiä.
+                  </li>
+                  <li>
+                    DevOps-putkien jatkokehittely, integraatiot ja ylläpito
+                    mobiilisovellukselle.
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Software Designer, Oscar Software Oy</h5>
+                  <strong class="col-4 fs-6 text-end">2015 - 2016</strong>
                 </div>
+                <ul>
+                  <li>
+                    Verkkokauppa-alustan kehitys ja ylläpito. Uusien
+                    verkkokauppojen tekninen toteuttaminen ja aiempien
+                    verkkokauppojen päivittäminen sekä ylläpito.
+                  </li>
+                  <li>
+                    Sovelletut teknologiat: PHP, MySQL, PDO, HTML5, CSS3,
+                    JavaScript, jQuery, AJAX, XML, Android SDK ja SVN.
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/Superpong/screenshot_3.png" alt="Superpong">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-foot middle-box aniview" data-av-animation="bounce">
-        <div class="container has-background-light has-text-dark middle-box-inner">
-          <div class="columns is-mobile is-vcentered some-links">
-            <div class="column has-text-centered some-link some-link-github">
-              <a href="https://github.com/jukkapajarinen">
-                <i class="fab fa-github has-text-link is-size-3"></i>
-              </a>
-            </div>
-            <div class="column has-text-centered some-link some-link-google-play">
-              <a href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen">
-                <img src="/images/google-play-icon.svg" alt="Google Play" class="google-play-svg-icon">
-              </a>
-            </div>
-            <div class="column has-text-centered some-link some-link-linked-in">
-              <a href="https://fi.linkedin.com/in/jukkapajarinen">
-                <i class="fab fa-linkedin has-text-link is-size-3"></i>
-              </a>
-            </div>
-            <div class="column has-text-centered some-link some-link-facebook">
-              <a href="https://www.facebook.com/jukka.pajarinen">
-                <i class="fab fa-facebook-f has-text-link is-size-3"></i>
-              </a>
-            </div>
-            <div class="column has-text-centered some-link some-link-twitter">
-              <a href="https://twitter.com/pajarinenjukka">
-                <i class="fab fa-twitter has-text-link is-size-3"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-white is-medium is-even has-divider" id="flagquizusa">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInLeft">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/FlagQuizUSA/screenshot_2.png" alt="FlagQuizUSA">
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Flag Quiz USA</h1>
-                <p class="subtitle">Test your knowledge of USA State and outlying areas flags!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>One flag is shown at a time.</li>
-                    <li>Choose 1 correct answer from 4 choices.</li>
-                    <li>Find out if you know them all.</li>
-                  </ol>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Web-kehittäjä, Puolustusvoimat</h5>
+                  <strong class="col-4 fs-6 text-end">2014 - 2015</strong>
                 </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.flagquizusa" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
+                <ul>
+                  <li>
+                    Puolustusvoimien sisäisen verkkosovelluksen kehitys ja
+                    ylläpito.
+                  </li>
+                  <li>
+                    Työ tehtiin täyspäiväisesti varusmiespalveluksen yhteydessä
+                    multimediavarusmiehenä.
+                  </li>
+                  <li>
+                    Sovelletut teknologiat: PHP, MySQL, HTML, CSS3 ja
+                    JavaScript.
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-dark is-medium is-odd has-divider" id="flagquizeu">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInRight">
-        <div class="container">
-          <div class="columns is-vcentered is-reverse-order-touch">
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Flag Quiz EU</h1>
-                <p class="subtitle">Test your knowledge of EU countries!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>One flag is shown at a time.</li>
-                    <li>Choose 1 correct answer from 4 choices.</li>
-                    <li>Find out if you know them all.</li>
-                  </ol>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Drupal Freelancer, Jilab Oy</h5>
+                  <strong class="col-4 fs-6 text-end">2013 - 2013</strong>
                 </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.flagquizeu" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
+                <ul>
+                  <li>
+                    Yrityksen verkkosivuston toteuttaminen Drupal-alustalla.
+                  </li>
+                  <li>Hosting, domain ja sertifikaatti-asioiden hoitaminen.</li>
+                  <li>
+                    Sovelletut teknologiat: PHP, MySQL, HTML5, CSS3 ja
+                    JavaScript.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="mb-4">
+              <h2>Koulutus</h2>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Tampereen yliopisto</h5>
+                  <strong class="col-4 fs-6 text-end">2016 - 2020</strong>
                 </div>
+                <ul>
+                  <li>
+                    <strong>Diplomi-insinööri</strong>, Tietotekniikan
+                    DI-ohjelma.
+                  </li>
+                  <li>
+                    Diplomityö: Web-käyttöliittymän hyväksymistestauksen
+                    priorisointi painotetun verkon avulla.
+                  </li>
+                  <li>Keskiarvo: 4.56 / 5.0</li>
+                </ul>
               </div>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/FlagQuizEU/screenshot_2.png" alt="FlagQuizEU">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-white is-medium is-even has-divider" id="flagquiz">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInLeft">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/FlagQuiz/screenshot_2.png" alt="FlagQuiz">
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Flag Quiz</h1>
-                <p class="subtitle">Test your knowledge of flags around our world!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>One flag is shown at a time.</li>
-                    <li>Choose 1 correct answer from 4 choices.</li>
-                    <li>Find out if you know them all.</li>
-                  </ol>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">
+                    Communication University of China, Nanjing
+                  </h5>
+                  <strong class="col-4 fs-6 text-end">2017 - 2018</strong>
                 </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.flagquiz" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
+                <ul>
+                  <li>Kiinan kielen ja kulttuurin vaihto-ohjelma.</li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-dark is-medium is-odd has-divider" id="sudoku">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInRight">
-        <div class="container">
-          <div class="columns is-vcentered is-reverse-order-touch">
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Sudoku</h1>
-                <p class="subtitle">Train your brain with our favorite number puzzle.</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Try to fill every empty square with number from 1 to 9.</li>
-                    <li>Every row must contain numbers from 1 to 9.</li>
-                    <li>Every column must contain numbers from 1 to 9.</li>
-                    <li>Every 3x3 square must contain numbers from 1 to 9.</li>
-                  </ol>
+              <div class="mb-4">
+                <div class="row align-items-center">
+                  <h5 class="col-8 fs-5">Karelia Ammattikorkeakoulu</h5>
+                  <strong class="col-4 fs-6 text-end">2010 - 2014</strong>
                 </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.supersudoku" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
+                <ul>
+                  <li>
+                    <strong>Insinööri (AMK)</strong>, Tietotekniikan
+                    koulutusohjelma.
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/Sudoku/screenshot_2.png" alt="Sudoku">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-white is-medium is-even has-divider" id="floodit">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInLeft">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/FloodIt/screenshot_2.png" alt="FloodIt">
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Flood It</h1>
-                <p class="subtitle">This Flood It game is clean and fun!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Try to fill up the board with just a single color.</li>
-                    <li>Fill the board before you run out of moves.</li>
-                    <li>To expand, choose a color that's next to your filled area.</li>
-                    <li>There's 5 different colors.</li>
-                  </ol>
-                </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.floodit" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-dark is-medium is-odd has-divider" id="emojidoku">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInRight">
-        <div class="container">
-          <div class="columns is-vcentered is-reverse-order-touch">
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Emojidoku</h1>
-                <p class="subtitle">Classic sudoku game with a new twist!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Try to fill every empty square with 9 different emojis.</li>
-                    <li>Every row must contain emojis from 1 to 9.</li>
-                    <li>Every column must contain emojis from 1 to 9.</li>
-                    <li>Every 3x3 square must contain emojis from 1 to 9.</li>
-                  </ol>
-                </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.emojidoku" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
-              </div>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/Emojidoku/screenshot_2.png" alt="Emojidoku">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-white is-medium is-even has-divider" id="tictactoe">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInLeft">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/TicTacToe/screenshot_2.png" alt="TicTacToe">
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Tic Tac Toe</h1>
-                <p class="subtitle">Save paper and pencils with this game!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Try to line-up three X's or O's in a row to win.</li>
-                    <li>Board size is 3x3.</li>
-                    <li>Line-up 3 X's or O's to win.</li>
-                  </ol>
-                </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.tictactoe" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
-              </div>
-            </div>
-          </div>
+            </section>
+            <section class="mb-4">
+              <h2>Ota yhteyttä</h2>
+              <p>
+                Kiinnostuitko? Hienoa, ollaan yhteydessä! Voit lähettää
+                sähköpostia osoitteeseen:
+                <a href="mailto:jukka.pajarinen@lumitum.com"
+                  >jukka.pajarinen@lumitum.com</a
+                >. Olen myös perustajajäsen ja yrittäjä
+                <strong>Lumitum Oy</strong>:ssä, jonka yhteystiedot löydät
+                täältä:
+                <a href="https://www.lumitum.com" target="_blank"
+                  >www.lumitum.com</a
+                >.
+              </p>
+            </section>
+            <section class="pt-5">
+              <p class="fst-italic">© 2021 Jukka Pajarinen</p>
+            </section>
+          </main>
         </div>
       </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-dark is-medium is-odd has-divider" id="flappyblock">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInRight">
-        <div class="container">
-          <div class="columns is-vcentered is-reverse-order-touch">
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">FlappyBlock</h1>
-                <p class="subtitle">Simple tap-to-flap game.</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Flap your way through obstacles to gain points.</li>
-                    <li>You'll receive 1 point for each obstacle.</li>
-                  </ol>
-                </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.flappyblock" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
-              </div>
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/FlappyBlock/screenshot_2.png" alt="FlappyBlock">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <section class="hero is-white is-medium is-even has-divider" id="taptaptap">
-      <div class="svg-divider-top"></div>
-      <div class="hero-body aniview" data-av-animation="slideInLeft">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-one-third has-text-centered">
-              <div class="app-preview">
-                <img src="/images/TapTapTap/screenshot_2.png" alt="TapTapTap">
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="app-info">
-                <h1 class="title">Tap Tap Tap</h1>
-                <p class="subtitle">Tap the dark squares!</p>
-                <div class="bread content">
-                  <ol>
-                    <li>Only tap the dark squares</li>
-                    <li>New dark squares appear automatically</li>
-                    <li>If you see 5 dark squares, you lose</li>
-                    <li>If you tap the white square, you lose.</li>
-                  </ol>
-                </div>
-                <div class="badges">
-                  <a href="https://play.google.com/store/apps/details?id=fi.jukkapajarinen.taptaptap" target="_blank" class="button is-google-badge"><img src="/images/google-play-badge-en.svg" alt="Download"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-divider-bottom"></div>
-    </section>
-
-    <footer class="footer has-divider is-odd">
-      <div class="svg-divider-top"></div>
-      <div class="footer-content">
-        <div class="container has-text-centered" id="address1"></div>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
