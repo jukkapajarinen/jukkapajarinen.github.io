@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="fi" data-theme="dark">
+<html lang="fi">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Ansioluettelo | Jukka Pajarinen" />
     <meta name="author" content="Jukka Pajarinen" />
     <title>Ansioluettelo | Jukka Pajarinen</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/build.css?v=1" type="text/css" />
-    <script defer src="/build.js?v=1" type="text/javascript"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/build.css?v=1" type="text/css" />
+    <script defer src="js/build.js?v=1" type="text/javascript"></script>
   </head>
   <body>
     <div class="container bg-info" id="paper">
       <nav class="navbar">
         <div class="container-fluid">
-          <h1 class="navbar-brand fs-1">Jukka Pajarinen</h1>
-          <button class="btn btn-primary" id="theme-toggler">
-            <i class="fas fa-adjust"></i>
+          <h1 class="navbar-brand text-body fs-1">Jukka Pajarinen</h1>
+          <button class="btn btn-warning d-print-none d-none d-lg-block" id="print-button">
+            Tulosta
+            <i class="fas fa-print"></i>
           </button>
         </div>
       </nav>
       <div class="container-fluid mt-3">
         <div class="row gx-5">
-          <aside class="col-md-3 d-none d-md-block">
-            <section class="mb-4 w-50">
-              <img
-                src="/images/jukkapajarinen.png"
-                alt="Photo"
-                class="img-fluid"
-              />
-            </section>
-            <section class="mb-4">
-              <h3>Yhteystiedot</h3>
+            <section class="col-lg-8">
+              <h2>Ohjelmistokonsultti</h2>
+              <p>
+                Olen ohjelmistotuotannon Diplomi-Insinööri ja pystyn toimimaan laajasti
+                ohjelmistotuotannon eri osa-alueilla. Minulla on paljon kokemusta full-stack
+                web-kehityksestä, frontend painotuksella. Web-kehityksen lisäksi minulta
+                onnistuu mobiilisovelluksien kehitystyöt ja UI/UX-suunnittelutyöt. Olen myös
+                saanut kehuja UI/UX-suunnittelijoilta visuaalisesta silmästäni käyttöliittymien ja
+                käyttäjäkokemuksen suhteen.
+              </p>
               <ul class="list-unstyled">
                 <li>
                   <i class="fas fa-envelope"></i>&nbsp;
@@ -55,104 +56,15 @@
                 </li>
               </ul>
             </section>
-            <section class="mb-4">
-              <h3>Tekniset taidot</h3>
-              <div class="mb-3">
-                <span class="badge bg-secondary">JavaScript</span>
-                <span class="badge bg-secondary">React</span>
-                <span class="badge bg-secondary">Redux</span>
-                <span class="badge bg-secondary">jQuery</span>
-                <span class="badge bg-secondary">Handlebars</span>
-                <span class="badge bg-secondary">Dust</span>
-                <span class="badge bg-secondary">Next.js</span>
-                <span class="badge bg-secondary">HTML5</span>
-                <span class="badge bg-secondary">CSS3</span>
-                <span class="badge bg-secondary">Sass</span>
-                <span class="badge bg-secondary">PostCSS</span>
-                <span class="badge bg-secondary">Bootstrap</span>
-              </div>
-              <div class="mb-3">
-                <span class="badge bg-secondary">Node.js</span>
-                <span class="badge bg-secondary">Express</span>
-                <span class="badge bg-secondary">JWT</span>
-                <span class="badge bg-secondary">AJAX</span>
-                <span class="badge bg-secondary">REST</span>
-                <span class="badge bg-secondary">PHP</span>
-                <span class="badge bg-secondary">PDO</span>
-                <span class="badge bg-secondary">Twig</span>
-                <span class="badge bg-secondary">C#</span>
-                <span class="badge bg-secondary">.NET Core</span>
-                <span class="badge bg-secondary">Nancy</span>
-                <span class="badge bg-secondary">WordPress</span>
-                <span class="badge bg-secondary">Drupal</span>
-                <span class="badge bg-secondary">MariaDB</span>
-                <span class="badge bg-secondary">PostgreSQL</span>
-                <span class="badge bg-secondary">LAMP</span>
-                <span class="badge bg-secondary">JAMstack</span>
-                <span class="badge bg-secondary">Webpack</span>
-                <span class="badge bg-secondary">Gulp</span>
-              </div>
-              <div class="mb-3">
-                <span class="badge bg-secondary">Microsoft Azure</span>
-                <span class="badge bg-secondary">Google Cloud Platform</span>
-                <span class="badge bg-secondary">Docker</span>
-                <span class="badge bg-secondary">GNU/Linux</span>
-                <span class="badge bg-secondary">Bash</span>
-                <span class="badge bg-secondary">GitHub</span>
-                <span class="badge bg-secondary">GitLab</span>
-                <span class="badge bg-secondary">CI/CD</span>
-                <span class="badge bg-secondary">GoCD</span>
-                <span class="badge bg-secondary">Robot</span>
-                <span class="badge bg-secondary">Selenium</span>
-                <span class="badge bg-secondary">YAML</span>
-                <span class="badge bg-secondary">JSON</span>
-              </div>
-              <div class="mb-3">
-                <span class="badge bg-secondary">Java</span>
-                <span class="badge bg-secondary">Android SDK</span>
-                <span class="badge bg-secondary">Admob</span>
-                <span class="badge bg-secondary">Google Play</span>
-                <span class="badge bg-secondary">LibGDX</span>
-                <span class="badge bg-secondary">Unity2D</span>
-                <span class="badge bg-secondary">G Suite Admin</span>
-                <span class="badge bg-secondary">Adobe XD</span>
-                <span class="badge bg-secondary">Figma</span>
-                <span class="badge bg-secondary">UI/UX</span>
-                <span class="badge bg-secondary">Scrum</span>
-              </div>
+            <section class="col-lg-4 d-none d-lg-block">
+              <img
+                src="images/jukkapajarinen.png"
+                alt="Photo"
+                class="img-fluid w-75 p-3 float-end"
+              />
             </section>
           </aside>
-          <main class="col-md-9">
-            <section class="mb-4">
-              <h2>Ohjelmistokonsultti</h2>
-              <p>
-                Ohjelmistokehittäjänä olen intohimoinen ja huolellinen tekijä.
-                Minulla on paljon kokemusta
-                <strong>full-stack</strong> web-kehityksestä,
-                frontend-painotuksella. Verkkosivustoja ja verkkokauppoja olen
-                tehnyt lähemmäs toistakymmentä. Mobiilikehityksen puolella olen
-                julkaissut 10 omaa sovellusta
-                <a
-                  href="https://play.google.com/store/apps/developer?id=Jukka+Pajarinen"
-                  target="_blank"
-                  >Google Play</a
-                >
-                -kauppaan ja kehittänyt satojen tuhansien käyttäjien
-                Unity-sovellusta. Olen myös saanut kehuja
-                UI/UX-suunnittelijoilta visuaalisesta silmästäni
-                käyttöliittymien ja käyttäjäkokemuksen suhteen.
-              </p>
-              <p>
-                Suunnittelen ja toteutan ohjelmistotuotteesi tai osallistun
-                konsultointiapuna projektiisi. Saat minulta laadukasta koodia ja
-                sujuvaa yhteistyötä! Olen
-                <strong>ohjelmistotuotannon</strong> Diplomi-Insinööri ja pystyn
-                toimimaan laajasti ohjelmistotuotannon eri osa-alueilla.
-                Suunnittelen myös jouhevasti näyttävät verkkosivustot ja
-                toteutan niiden ohjelmoinnin staattisena tai WordPress ja Drupal
-                -alustoilla.
-              </p>
-            </section>
+          <main class="col-lg-12">
             <section class="mb-4">
               <h2>Työkokemus</h2>
               <div class="mb-4">
@@ -305,7 +217,7 @@
             <section class="mb-4">
               <h2>Ota yhteyttä</h2>
               <p>
-                Kiinnostuitko? Hienoa, ollaan yhteydessä! Voit lähettää
+                Kiinnostuitko? Voit lähettää
                 sähköpostia osoitteeseen:
                 <a href="mailto:jukka.pajarinen@lumitum.com"
                   >jukka.pajarinen@lumitum.com</a
@@ -318,7 +230,7 @@
               </p>
             </section>
             <section class="pt-5">
-              <p class="fst-italic">© 2021 Jukka Pajarinen</p>
+              <p class="fst-italic">© 2023 Jukka Pajarinen</p>
             </section>
           </main>
         </div>
