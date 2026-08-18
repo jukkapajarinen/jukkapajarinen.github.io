@@ -12,19 +12,23 @@
   <script src="./lib/jquery-3.7.1.min.js" type="text/javascript"></script>
   <script defer src="./src/main.js?v=1" type="text/javascript"></script>
 </head>
-<body class="bg-gray-100 h-screen" style="background-image: radial-gradient(#12211530 1px, rgb(243, 244, 246) 1px);background-size: 15px 15px;">
-  <div id="cookie-banner" class="fixed top-0 left-0 right-0 bg-blue-600 text-white p-4 flex flex-col items-start md:flex-row md:items-center justify-between space-y-2 md:space-y-0 z-50">    <p class="text-sm font-medium md:text-base">Sivusto haluaa käyttää evästeitä analytiikkaan. Hyväksytkö evästeiden käytön?</p>
-    <div class="flex space-x-2">
-      <button id="cookie-accept" class="bg-white font-medium text-blue-600 py-3 px-6 hover:bg-gray-200">Hyväksy</button>
-      <button id="cookie-decline" class="bg-gray-200 font-medium text-gray-800 py-3 px-6 hover:bg-gray-300">Hylkää</button>
+<body class="bg-gray-50 text-gray-900" style="background: #f8fafc; background-image: radial-gradient(#cbd5e133 1px, transparent 1px); background-size: 16px 16px;">
+  <div id="cookie-banner" class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-800 via-blue-700 to-indigo-800 text-white z-50 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 0, transparent 12px);"></div>
+    <div class="max-w-screen-2xl mx-auto px-8 py-10 relative flex flex-col items-start md:flex-row md:items-center justify-between gap-4">
+      <p class="text-sm font-medium md:text-base">Sivusto haluaa käyttää evästeitä analytiikkaan. Hyväksytkö evästeiden käytön?</p>
+      <div class="flex gap-3">
+        <button id="cookie-accept" class="inline-flex items-center gap-1 bg-white hover:bg-blue-50 text-blue-800 font-semibold px-4 py-2 rounded-full shadow transition duration-200 hover:shadow-lg">Hyväksy</button>
+        <button id="cookie-decline" class="inline-flex items-center gap-1 bg-blue-900/40 hover:bg-blue-900/60 text-white font-medium px-4 py-2 rounded-full border border-blue-200/30 transition duration-200">Hylkää</button>
+      </div>
     </div>
   </div>
   <div class="flex items-center justify-center min-h-screen">
     <div class="p-6 sm:p-8 max-w-xl w-full text-center">
       <a href="https://github.com/jukkapajarinen" target="_blank" class="inline-block">
-        <img 
-          src="jukkapajarinen.png" 
-          alt="Jukka Pajarinen" 
+        <img
+          src="jukkapajarinen.png"
+          alt="Jukka Pajarinen"
           class="w-32 h-32 rounded-full mx-auto mb-6 transform transition-transform duration-50 ease-in-out hover:scale-105"
         >
       </a>
@@ -36,17 +40,16 @@
           <span class="text-gray-400 font-thin mx-2">|</span>
           <a href="https://www.theseus.fi/bitstream/handle/10024/72055/Pajarinen_Jukka.pdf" target="_blank" class="text-blue-600 font-bold hover:underline">Opinnäytetyö 2014</a>
           <span class="text-gray-400 font-thin mx-2">|</span>
-          <a href="https://github.com/jukkapajarinen" target="_blank" class="text-blue-600 font-bold hover:underline animate-bounce">Github</a>
+          <a href="https://github.com/jukkapajarinen" target="_blank" class="text-blue-600 font-bold hover:underline animate-pulse">Github</a>
           <span class="text-gray-400 font-thin mx-2">|</span>
           <a href="https://fi.linkedin.com/in/jukkapajarinen" target="_blank" class="text-blue-600 font-bold hover:underline">LinkedIn</a>
       </div>
-    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-        <a href="mailto:jukka.pajarinen@lumitum.com" class="bg-blue-600 font-medium text-white py-3 px-6 hover:bg-blue-700">Lähetä sähköpostia</a>
-        <a href="https://lumitum.com/" target="_blank" class="bg-gray-800 font-medium text-white py-3 px-6 hover:bg-gray-700">Lumitum Oy</a>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+        <a href="mailto:jukka.pajarinen@lumitum.com" class="inline-flex items-center justify-center gap-1 bg-blue-800 hover:bg-blue-900 text-white font-semibold px-4 py-2 rounded-full shadow transition duration-200 hover:shadow-lg">Lähetä sähköpostia</a>
+        <a href="https://lumitum.com/" target="_blank" class="inline-flex items-center justify-center gap-1 bg-white hover:bg-blue-50 text-blue-800 font-medium px-4 py-2 rounded-full shadow border border-blue-200 transition duration-200">Lumitum Oy</a>
     </div>
     <ul class="mb-6">
       <li><a href="https://www.jukkapajarinen.com/liputuspaivat/" target="_blank" class="font-medium text-blue-600 hover:underline">Suomen liputuspäivät</a></li>
-      <li><a href="https://www.jukkapajarinen.com/postinumerot/" target="_blank" class="font-medium text-blue-600 hover:underline">Suomen postinumerot</a></li>
     </ul>
     <div class="border-t border-gray-300 pt-4">
       <p class="text-xl font-bold text-gray-800">Jukka Pajarinen</p>
